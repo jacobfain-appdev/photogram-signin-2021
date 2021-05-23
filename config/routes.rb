@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   get("/", { :controller => "users", :action => "index" })
 
+  # Password
+  get("/user_sign_up", {:controller => "users", :action => "new_registration"})
   # User routes
 
   # CREATE
